@@ -1,0 +1,13 @@
+1.
+getval_280中有一串 58 90 c3,对应于汇编代码的
+popq %rax
+nop
+ret
+
+2.
+addval_273中有一串 48 89 c7 c3,对应于汇编代码的
+movq %rax, %rdi
+ret
+
+3.所以将栈设置为（从原本的返回地址位置开始）getval_280组件位置，cookie数据，addval_273组建位置，touch2地址
+其中getval_280组件位置偏移量为2,addval_273偏移量为2
